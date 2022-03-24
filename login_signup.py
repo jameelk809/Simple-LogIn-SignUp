@@ -1,7 +1,7 @@
 import hashlib
 import json
 
-jsonFile = "test.json"
+jsonFile = "record_dict.json"
 
 
 def add_user(user, password):
