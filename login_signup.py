@@ -60,13 +60,18 @@ def create_hash(input_string):
     return hashlib.md5(input_string.encode()).hexdigest()
 
 
+def goodbye():
+    print('\nGoodbye!!')
+    exit(0)
+
+
 def main():
     print("\nChoose:")
     print("1.   SignUp")
     print("2.   LogIn")
     print("3.   For Admin")
     print("4.   Exit")
-    choice = int(input("Enter choice:"))
+    choice = int(input("Enter choice: "))
     if choice == 1:
         Signup()
     elif choice == 2:
@@ -74,13 +79,11 @@ def main():
     elif choice == 3:
         Admin()
     elif choice == 4:
-        exit(0)
+        goodbye()
     else:
         print("Wrong Choice")
 
 
 while True:
     main()
-
-
 
